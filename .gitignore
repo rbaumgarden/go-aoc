@@ -1,0 +1,29 @@
+# Compiled Go binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Compiled Go object
+*.o
+*.a
+
+# Compiled Go files
+*.test
+*.prof
+
+# Compiled C code
+*.out
+
+# Temporary files
+*.tmp
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories
+/vendor/
+
+# .idea directory created by some IDEs
+.idea/
