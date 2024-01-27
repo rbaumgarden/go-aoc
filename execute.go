@@ -19,18 +19,17 @@ func readInput(inputFile string) (string, error) {
 func main() {
 	fmt.Println("executing")
 
-    inputText, err := readInput(`E:\.dev\golang\aoc\input\20231204_part1_prod.txt`)
+	inputText, err := readInput(`E:\.dev\golang\aoc\input\20231205_part1_prod.txt`)
 
-    if err != nil {
-        panic("cannot proceed without input")
-    }
+	if err != nil {
+		panic("cannot proceed without input")
+	}
 
-	day := new(twentythree.Day4)
+	day := new(twentythree.Day5)
 	day.ParseData(inputText)
 	result, _ := day.Part1()
-    fmt.Println("part 1: ", result)
+	fmt.Println("part 1: ", result)
 
-    result, _ = day.Part2()
-    fmt.Println("part 2: ", result)
-
+	result, _ = day.Part2()
+	fmt.Println("part 2: ", result)
 }
